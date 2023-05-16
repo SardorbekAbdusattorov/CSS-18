@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(62, 161, 232);
+}
+.container {
+    padding: 100px;
+}
+.animation {
+    border: solid white;
+    border-radius: 30%;
+    width: 150px;
+    height: 300px;
+    margin: auto;
+    padding-top: 25px;
+
+}
+.anime {
+    animation: alternate;
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-timing-function: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin: auto;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@keyframes circle {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(220px);
+        opacity: 0.1;
+    }
+}
